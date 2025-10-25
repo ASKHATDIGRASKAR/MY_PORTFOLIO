@@ -6,17 +6,17 @@ const About = () => {
     {
       icon: Code2,
       title: "Clean Code",
-      description: "Writing maintainable, efficient, and well-documented code"
+      description: "Writing efficient, scalable, and maintainable solutions"
     },
     {
       icon: Laptop,
-      title: "Full Stack",
-      description: "End-to-end development from database to deployment"
+      title: "AI & Automation",
+      description: "Computer vision, machine learning, and intelligent automation"
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Optimized solutions that scale with your needs"
+      title: "Full Stack",
+      description: "Django backends with modern frontend technologies"
     }
   ];
 
@@ -26,8 +26,9 @@ const About = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm a passionate developer specializing in Python and modern web technologies, 
-            dedicated to creating impactful software solutions.
+            Enthusiastic and self-motivated Python & Web Developer currently pursuing B.Tech in AI & ML at RGPV, Bhopal. 
+            I build practical projects using Python, Django, REST APIs, and modern frontend tools, with a passion for 
+            solving real-world problems through clean, efficient code.
           </p>
         </div>
 

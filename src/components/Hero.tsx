@@ -25,10 +25,13 @@ const Hero = () => {
       <div className="container relative z-10 px-4 mx-auto text-center">
         <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Python & Software Developer
+            Akshat Digraskar
           </h1>
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+            Python & Web Developer
+          </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Building robust, scalable solutions with modern web technologies and Python expertise
+            Building practical solutions with Python, Django, REST APIs, and modern web technologies. Passionate about AI, computer vision, and automation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center pt-8">
             <Button 

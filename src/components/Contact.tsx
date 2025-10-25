@@ -4,10 +4,10 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Mail, label: "Email", href: "mailto:your.email@example.com" }
+    { icon: Github, label: "GitHub", href: "https://github.com/MORTALAKSHAT" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/akshat-digraskar" },
+    { icon: Mail, label: "Email", href: "mailto:akshatdigraskar58@gmail.com" },
+    { icon: Twitter, label: "Phone", href: "tel:+917489259569" }
   ];
 
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
             <CardHeader className="text-center">
               <CardTitle className="text-4xl mb-4">Let's Connect</CardTitle>
               <CardDescription className="text-lg">
-                I'm always interested in hearing about new projects and opportunities
+                Currently exploring opportunities in Python, AI, and full-stack development. Let's build something amazing together!
               </CardDescription>
             </CardHeader>
             <CardContent>

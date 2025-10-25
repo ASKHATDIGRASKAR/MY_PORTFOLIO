@@ -6,31 +6,31 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with real-time inventory management and payment processing",
-      tech: ["Python", "Django", "React", "PostgreSQL", "Stripe"],
-      github: "#",
+      title: "Real-Time Face Recognition",
+      description: "Live face recognition system using Python, OpenCV, and TensorFlow achieving 95% accuracy in detection and recognition",
+      tech: ["Python", "OpenCV", "TensorFlow", "Computer Vision"],
+      github: "https://github.com/MORTALAKSHAT",
       demo: "#"
     },
     {
-      title: "Data Analytics Dashboard",
-      description: "Interactive dashboard for visualizing complex datasets with real-time updates",
-      tech: ["Python", "Flask", "D3.js", "MongoDB"],
-      github: "#",
+      title: "Voice Assistant",
+      description: "Speech-enabled personal assistant using SpeechRecognition and pyttsx3 for Wikipedia search, time updates, and interactive commands",
+      tech: ["Python", "SpeechRecognition", "pyttsx3", "Automation"],
+      github: "https://github.com/MORTALAKSHAT",
       demo: "#"
     },
     {
-      title: "Task Management API",
-      description: "RESTful API with authentication, authorization, and comprehensive documentation",
-      tech: ["FastAPI", "PostgreSQL", "Docker", "Redis"],
-      github: "#",
+      title: "Freelance World",
+      description: "Django-based freelancing platform with API integration and user authentication system for connecting local freelancers",
+      tech: ["Django", "Python", "REST APIs", "Authentication", "Web Development"],
+      github: "https://github.com/MORTALAKSHAT",
       demo: "#"
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI-powered responses and sentiment analysis",
-      tech: ["Python", "WebSocket", "React", "OpenAI"],
-      github: "#",
+      title: "AI-Driven Projects",
+      description: "Exploring AI features, computer vision applications, and RESTful web services with modern frameworks",
+      tech: ["Python", "AI/ML", "Computer Vision", "REST APIs"],
+      github: "https://github.com/MORTALAKSHAT",
       demo: "#"
     }
   ];

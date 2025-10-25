@@ -16,7 +16,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-primary/20">
         <div className="container px-4 mx-auto text-center text-muted-foreground">
-          <p>© 2024 Portfolio. Built with React & TypeScript.</p>
+          <p>© 2024 Akshat Digraskar. Built with React & TypeScript.</p>
         </div>
       </footer>
     </div>
