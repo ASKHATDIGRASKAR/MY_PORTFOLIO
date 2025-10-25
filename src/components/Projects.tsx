@@ -36,11 +36,18 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-secondary">
-      <div className="container px-4 mx-auto">
+    <section id="projects" className="py-20 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-secondary"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      
+      <div className="container px-4 mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-4">
+            <span className="text-primary font-semibold">MY WORK</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">Featured Projects</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             A selection of projects showcasing my expertise in software development
           </p>
         </div>
@@ -49,33 +56,46 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-glow group"
+              className="border border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group hover:scale-[1.02] overflow-hidden relative"
             >
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  {project.title}
+              {/* Gradient Border Effect */}
+              <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity"></div>
+              
+              <CardHeader className="relative">
+                <CardTitle className="flex items-center justify-between text-foreground">
+                  <span className="group-hover:text-primary transition-colors">{project.title}</span>
                   <div className="flex gap-2">
-                    <Button size="icon" variant="ghost" asChild>
+                    <Button 
+                      size="icon" 
+                      variant="ghost" 
+                      asChild
+                      className="hover:bg-primary/20 hover:text-primary transition-all hover:scale-110"
+                    >
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-5 h-5" />
                       </a>
                     </Button>
-                    <Button size="icon" variant="ghost" asChild>
+                    <Button 
+                      size="icon" 
+                      variant="ghost" 
+                      asChild
+                      className="hover:bg-primary/20 hover:text-primary transition-all hover:scale-110"
+                    >
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     </Button>
                   </div>
                 </CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <Badge 
                       key={techIndex}
                       variant="secondary"
-                      className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                      className="group-hover:bg-primary group-hover:text-primary-foreground transition-all hover:scale-105 cursor-default backdrop-blur-sm border border-primary/20"
                     >
                       {tech}
                     </Badge>
