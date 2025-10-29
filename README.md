@@ -1,7 +1,7 @@
 Welcome to My Portfolio 🚀
 Project Info
 
-Live URL: https://akshatdigraskar.vercel.app
+Live URL: https://dev-chronicle-site.lovable.app
 
 🛠 How to Edit This Code
 
